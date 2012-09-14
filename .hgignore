@@ -7,7 +7,6 @@ syntax: glob
 *.scad
 *.stl
 *.pkl
-*.dxf
 *.komodo*
 *.egg-info
 .DS_Store
