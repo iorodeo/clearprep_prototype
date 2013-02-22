@@ -67,11 +67,35 @@ float Colorimeter::getAbsorbanceRed() {
     uint32_t freq;
 
     freq = getFrequencyRed();
+    Serial << "freq: " << freq << endl;
     tran = freq2trans(calibration.red,freq);
     abso = trans2absorb(tran);
     return abso;
 }
 
+float Colorimeter::getAbsorbanceGreen() {
+    float abso;
+    float tran;
+    uint32_t freq;
+
+    freq = getFrequencyGreen();
+    Serial << "freq: " << freq << endl;
+    tran = freq2trans(calibration.green,freq);
+    abso = trans2absorb(tran);
+    return abso;
+}
+
+float Colorimeter::getAbsorbanceBlue() {
+    float abso;
+    float tran;
+    uint32_t freq;
+
+    freq = getFrequencyBlue();
+    Serial << "freq: " << freq << endl;
+    tran = freq2trans(calibration.blue,freq);
+    abso = trans2absorb(tran);
+    return abso;
+}
 void Colorimeter::getMeasurement() {
     frequency.red = getFrequencyRed();
     frequency.green = getFrequencyGreen();

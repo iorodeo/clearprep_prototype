@@ -20,6 +20,8 @@ void setup() {
     colorimeter.initialize();
     colorimeter.numSamples = NUMBER_OF_SAMPLES;
     colorimeter.calibration.red = RED_LED_CALIBRATION;
+    colorimeter.calibration.green = GREEN_LED_CALIBRATION;
+    colorimeter.calibration.blue = BLUE_LED_CALIBRATION;
 
     // Intialize LCD display
     softSerial.begin(LCD_BAUDRATE);
@@ -40,6 +42,9 @@ void loop() {
 
     // Get measurement and update lowpass filter
     absorb = colorimeter.getAbsorbanceRed();
+    //absorb = colorimeter.getAbsorbanceGreen();
+    //absorb = colorimeter.getAbsorbanceBlue();
+
     if (isFirstSample) {
         isFirstSample = false;
         lowPass.setValue(absorb);

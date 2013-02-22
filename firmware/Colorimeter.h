@@ -35,6 +35,8 @@ class Colorimeter {
         void getMeasurement();
 
         float getAbsorbanceRed();
+        float getAbsorbanceGreen();
+        float getAbsorbanceBlue();
 
         void calibrate();
         bool checkCalibration();

@@ -6,6 +6,8 @@ extern const int LOOP_DELAY;
 
 // Colorimeter parameters
 extern const unsigned long RED_LED_CALIBRATION;
+extern const unsigned long GREEN_LED_CALIBRATION;
+extern const unsigned long BLUE_LED_CALIBRATION;
 extern const unsigned int NUMBER_OF_SAMPLES;
 
 // Lowpass filter parameters

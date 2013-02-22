@@ -9,7 +9,8 @@ INCH2MM = 25.4
 create_dxf = True 
 
 # Inside dimensions
-x,y,z = 2.61*INCH2MM, 3.0*INCH2MM, 3.0*INCH2MM
+#x,y,z = 2.61*INCH2MM, 3.0*INCH2MM, 3.0*INCH2MM
+x,y,z = 2.61*INCH2MM, 3.0*INCH2MM, 2.5*INCH2MM  
 wall_thickness = 3.0 
 
 
@@ -37,9 +38,13 @@ params = {
         'standoff_hole_diameter'  : 0.116*INCH2MM, 
         'led_cable_hole_position' : (-1.0*INCH2MM, -0.5*z + 0.4*INCH2MM),
         'led_cable_hole_size'     : 3.85,
-        'slot_size'               : (3.0,5.0),
-        'slot_position'           : (0.0, -0.5*z + 19.3),
-        'pcb_position'            : (0, -0.5*z + 19.3),
+        'slot_size'               : (5.0,2.0),
+        #'slot_size'               : (3.0,5.0),
+        #'slot_size'               : (3.87,3.87),
+        #'slot_position'           : (0.0, -0.5*z + 19.3),
+        'slot_position'           : (0.0, -0.5*z + 19.3 + 0.5),
+        #'pcb_position'            : (0, -0.5*z + 19.3),
+        'pcb_position'            : (0, -0.5*z + 19.3 + 0.5),
         'pcb_hole_spacing'        : (1.6*INCH2MM, 0.8*INCH2MM),
         'pcb_mount_hole_diam'     : 0.12* INCH2MM,
         'shrouded_hole_position'  : (0.475*INCH2MM, -0.5*z + 19.935),
@@ -63,8 +68,8 @@ part_assembly = enclosure.get_assembly(
         show_top=True,
         show_second_top=True,
         show_bottom=True,
-        show_left=True,
-        show_right=True,
+        show_left=False,
+        show_right=False,
         show_front=False,
         show_back=True,
         show_holder=True,
