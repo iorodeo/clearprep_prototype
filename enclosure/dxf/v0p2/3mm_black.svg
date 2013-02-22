@@ -40,7 +40,7 @@
      showgrid="false"
      units="in"
      inkscape:zoom="0.63429569"
-     inkscape:cx="-23.667259"
+     inkscape:cx="174.18999"
      inkscape:cy="526.18109"
      inkscape:window-x="0"
      inkscape:window-y="24"
@@ -153,13 +153,6 @@
        sodipodi:type="inkscape:persp3d" />
     <inkscape:perspective
        id="perspective7283"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:perspective
-       id="perspective6030"
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
        inkscape:vp_z="1 : 0.5 : 1"
        inkscape:vp_y="0 : 1000 : 0"
