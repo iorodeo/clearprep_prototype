@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="47.022mm" height="47.022mm" viewBox="0 0 47.022 47.022" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<g transform="translate(23.511,23.972) scale(1,-1)">
+<path id="Sketch" d="M -21.05 23.05 L 21.05 23.05 A 2.0 2.0 0 0 0 23.05 21.05 L 23.05 -21.05 A 2.0 2.0 0 0 0 21.05 -23.05 L -21.05 -23.05 A 2.0 2.0 0 0 0 -23.05 -21.05 L -23.05 21.05 A 2.0 2.0 0 0 0 -21.05 23.05 " stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="-19.05" cy="19.05" r="1.55" stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="19.05" cy="19.05" r="1.55" stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="-19.05" cy="-19.05" r="1.55" stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="19.05" cy="-19.05" r="1.55" stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="2.07871204353e-15" cy="-7.821" r="8.75" stroke="#000000" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+</g>
+</svg>
