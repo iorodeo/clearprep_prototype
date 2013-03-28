@@ -13,16 +13,16 @@ class DisplayHandler
 {
 
     public:
+
         DisplayHandler();
         void initialize();
         void showSplashScreen();
-        void updateBrightness();
-        void clearScreen();
         void setBrightness(unsigned int value);
+        void clearScreen();
 
-        void showValue(unsigned int value);
-        void showValue(float value);
-        void showTriggered();
+        void updateMeasurementScreen(float value, float threshUpper, float threshLower);
+        void updateShowThresholdScreen(float threshUpper, unsigned int okSetValue);
+        void updateSetThresholdScreen(float value, float threshUpper);
 
     private:
         static SoftwareSerial softwareSerial;

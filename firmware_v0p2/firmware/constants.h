@@ -35,12 +35,19 @@ namespace constants
 
     // Display
     enum {LcdNumRow=64, LcdNumCol=128};
+    enum {Ok=0, Set};
     extern const unsigned int ModeSwitchCountThreshold;
     extern const unsigned int SplashScreenTimeout;
-    extern char LcdBlankRow[LcdNumCol];
+    extern const unsigned int MinPotentiometerValue; 
+    extern const unsigned int MaxPotentiometerValue; 
+    extern const unsigned int MinBrightnessValue;
+    extern const unsigned int MaxBrightnessValue;
+    
 
     // Signal processing
     extern const float LowPassFreqCut;
+    extern const float MinAbsorbThresholdUpper;
+    extern const float MaxAbsorbThresholdUpper;
     extern const unsigned long RedLedCalibration;
     extern const unsigned long GreenLedCalibration;
     extern const unsigned long BlueLedCalibration;

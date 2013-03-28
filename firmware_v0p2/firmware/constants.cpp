@@ -26,14 +26,24 @@ namespace constants
     const unsigned int LcdStartupDelay = 1500;
     
     // Display
-    const unsigned int ModeSwitchCountThreshold = 30;
+    const unsigned int ModeSwitchCountThreshold = 10;
     const unsigned int SplashScreenTimeout = 3000; 
+    const unsigned int MinPotentiometerValue = 0; 
+    const unsigned int MaxPotentiometerValue = 1023; 
+    const unsigned int MinBrightnessValue = 0;
+    const unsigned int MaxBrightnessValue = 100;
 
     // Signal processing
-    const float LowPassFreqCut=1.0;
+    const float LowPassFreqCut = 1.5;
+    extern const float MinAbsorbThresholdUpper = 0.206;
+    extern const float MaxAbsorbThresholdUpper = 2.5;
     const unsigned long RedLedCalibration = 25000;
     const unsigned long GreenLedCalibration = 25000;
     const unsigned long BlueLedCalibration = 25000;
     const unsigned int NumberOfSamples = 2;
 
+    // EEPROM
+    const int aborbThreshAddress=0;
+
 } // namespace constants
+

@@ -1,6 +1,9 @@
 #include "display_handler.h"
 #include "Streaming.h"
 
+int getIntegerPart(float value);
+unsigned int getDecimalPart(float value);
+
 SoftwareSerial DisplayHandler::softwareSerial = SoftwareSerial(
         constants::LcdSerialRxPin, 
         constants::LcdSerialTxPin
@@ -17,7 +20,7 @@ void DisplayHandler::initialize()
 { 
     softwareSerial.begin(constants::LcdBaudrate);
     delay(constants::LcdStartupDelay);
-    setBrightness(30);
+    setBrightness(500);
     clearScreen();
 }
 
@@ -31,10 +34,15 @@ void DisplayHandler::showSplashScreen()
 }
 
 
-void DisplayHandler::updateBrightness()
+void DisplayHandler::setBrightness(unsigned int potValue)
 {
-    unsigned int potValue = analogRead(constants::PotentiometerPin);
-    unsigned int brightness = map(potValue, 0,1023,0,100);
+    unsigned int brightness = map(
+            potValue, 
+            constants::MinPotentiometerValue,
+            constants::MaxPotentiometerValue,
+            constants::MinBrightnessValue,
+            constants::MaxBrightnessValue
+            );
     lcd.setBrightness(brightness);
 }
 
@@ -43,40 +51,91 @@ void DisplayHandler::clearScreen()
     lcd.clearScreen();
 }
 
-void DisplayHandler::setBrightness(unsigned int value)
-{
-    lcd.setBrightness(value);
-}
 
-
-void DisplayHandler::showValue(unsigned int value)
+void DisplayHandler::updateMeasurementScreen(float value, float threshLower, float threshUpper )
 {
-    char msg[constants::LcdNumCol];
-    snprintf(msg, constants::LcdNumCol, "VALUE = %d       ", value);         
-    lcd.setPos(1,10);
-    lcd.print(msg);
-}
-
-void DisplayHandler::showValue(float value)
-{
+    int x = 20;
+    int y = 10;
     char msg[constants::LcdNumCol];
     int intPart = floor(value);
     int decPart = int(100*(value - float(intPart)));
-    snprintf(msg, constants::LcdNumCol, "ABSORBANCE: %d.%d          ", intPart, decPart);
-    lcd.setPos(15,10);
+    snprintf(msg, constants::LcdNumCol, "ABSORBANCE: %d.%02d          ", intPart, decPart);
+    lcd.setPos(x,y);
     lcd.print(msg);
+
+    x = 55;
+    y = 35;
+
+    if (value > threshUpper)
+    {
+        snprintf(msg, constants::LcdNumCol, "FAIL            ");
+        lcd.setPos(x,y);
+        lcd.print(msg);
+    }
+    else if (value > threshLower)
+    {
+        snprintf(msg, constants::LcdNumCol, "PASS            ");
+        lcd.setPos(x,y);
+        lcd.print(msg);
+    }
+    else
+    {
+        snprintf(msg, constants::LcdNumCol, "                ");
+        lcd.setPos(x,y);
+        lcd.print(msg);
+    }
+    
 }
 
-
-void DisplayHandler::showTriggered()
+void DisplayHandler::updateShowThresholdScreen(float threshUpper, unsigned int okSetValue)
 {
     char msg[constants::LcdNumCol];
-    snprintf(msg, constants::LcdNumCol, "Triggered");
-    lcd.clearScreen();
-    lcd.setPos(1,10);
+    int x = 20;
+    int y = 10;
+    int intPart = floor(threshUpper);
+    int decPart = int(100*(threshUpper - float(intPart)));
+    snprintf(msg, constants::LcdNumCol, "THRESHOLD: %d.%02d          ", intPart, decPart);
+    lcd.setPos(x,y);
     lcd.print(msg);
+
+    y = 25;
+    char marker = (okSetValue == constants::Ok) ? '*' : ' ';
+    snprintf(msg, constants::LcdNumCol, "%c OK            ",marker);
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
+    y = 35;
+    marker = (okSetValue == constants::Set) ? '*' : ' ';
+    snprintf(msg, constants::LcdNumCol, "%c SET            ",marker);
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
 }
 
 
+void DisplayHandler::updateSetThresholdScreen(float value, float threshUpper)
+{
+    char msg[constants::LcdNumCol];
+    int x = 25;
+    int y = 10;
+    snprintf(msg, constants::LcdNumCol, "SET THRESHOLD");
+    lcd.setPos(x,y);
+    lcd.print(msg);
 
+    x = 20;
+    y = 30;
+    int intPart = floor(threshUpper);
+    int decPart = int(100*(threshUpper - float(intPart)));
+    snprintf(msg, constants::LcdNumCol, "THRESHOLD:  %d.%02d          ", intPart, decPart);
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
+    y = 40;
+    intPart = floor(value);
+    decPart = int(100*(value - float(intPart)));
+    snprintf(msg, constants::LcdNumCol, "ABSORBANCE: %d.%02d          ", intPart, decPart);
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
+}
 

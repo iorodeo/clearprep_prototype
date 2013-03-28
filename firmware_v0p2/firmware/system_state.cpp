@@ -2,10 +2,13 @@
 #include <stdint.h>
 #include "system_state.h"
 #include "Streaming.h"
+#include "eeprom_anything.h"
 
 DisplayHandler SystemState::display = DisplayHandler();
 
+
 float getUpdateDt(uint32_t t1, uint32_t t0);
+
 
 SystemState::SystemState() 
 { 
@@ -18,9 +21,6 @@ SystemState::SystemState()
     mode_ = MeasurementMode;
     modeSwitchCount_ = 0;
 
-    // ------------------------------------------------------------------------
-    // TEMPORARY
-    // ------------------------------------------------------------------------
     absorbThreshLower_ = 0.1;
     absorbThreshUpper_ = 1.2;
 }
@@ -45,14 +45,34 @@ void SystemState::initialize()
     Serial.begin(constants::UsbBaudrate);
     display.initialize();
     display.showSplashScreen();
-
+    readThresholdFromEEPROM();
 }
 
 
 void SystemState::update()
 {
     updateMeasurement();
-    updateDisplay();
+    updatePotValue();
+    switch (mode_)
+    {
+        case MeasurementMode:
+            updateLCDMeasMode();
+            break;
+
+        case ShowThresholdMode:
+            updateLCDShowThreshMode();
+            break;
+
+        case SetThresholdMode:
+            updateAbsorbThreshUpper();
+            updateLCDSetThreshMode();
+            break;
+
+        default:
+            updateLCDMeasMode();
+            break;
+    }
+    updateLEDDisplay();
     updateMode();
 }
 
@@ -78,40 +98,53 @@ void SystemState::updateMeasurement()
 }
 
 
-void SystemState::updateDisplay()
+void SystemState::updatePotValue()
 {
-    display.updateBrightness();
+    potValue_ = analogRead(constants::PotentiometerPin);
+}
 
-    // ------------------------------------------------------------------------
-    // TEMPORARY 
-    // ------------------------------------------------------------------------
-    if (mode_ == MeasurementMode)
+
+void SystemState::updateLEDDisplay()
+{
+    if (absorbFilt_ > absorbThreshUpper_)
     {
-        display.showValue(absorbFilt_);
-        // Set indicator led
-        if (absorbFilt_ > absorbThreshUpper_)
-        {
-            digitalWrite(constants::IndicatorRedLedPin, HIGH);
-            digitalWrite(constants::IndicatorGreenLedPin, LOW);
-        }
-        else if (absorbFilt_ > absorbThreshLower_)
-        {
-            digitalWrite(constants::IndicatorRedLedPin, LOW);
-            digitalWrite(constants::IndicatorGreenLedPin, HIGH);
-        }
-        else
-        {
-            digitalWrite(constants::IndicatorRedLedPin, LOW);
-            digitalWrite(constants::IndicatorGreenLedPin, LOW);
-        }
+        digitalWrite(constants::IndicatorRedLedPin, HIGH);
+        digitalWrite(constants::IndicatorGreenLedPin, LOW);
+    }
+    else if (absorbFilt_ > absorbThreshLower_)
+    {
+        digitalWrite(constants::IndicatorRedLedPin, LOW);
+        digitalWrite(constants::IndicatorGreenLedPin, HIGH);
     }
     else
     {
-        display.showTriggered();
+        digitalWrite(constants::IndicatorRedLedPin, LOW);
+        digitalWrite(constants::IndicatorGreenLedPin, LOW);
     }
-    // ------------------------------------------------------------------------
+}
 
-    
+
+void SystemState::updateLCDMeasMode()
+{ 
+    display.setBrightness(potValue_);
+    display.updateMeasurementScreen(
+            absorbFilt_,
+            absorbThreshLower_, 
+            absorbThreshUpper_
+            );
+}
+
+
+void SystemState::updateLCDShowThreshMode()
+{ 
+    unsigned int okSetValue = getOkSetValue();
+    display.updateShowThresholdScreen(absorbThreshUpper_,okSetValue);
+}
+
+
+void SystemState::updateLCDSetThreshMode()
+{
+    display.updateSetThresholdScreen(absorbFilt_, absorbThreshUpper_);
 }
 
 
@@ -133,19 +166,36 @@ void SystemState::updateMode()
     if (modeSwitchCount_ >= constants::ModeSwitchCountThreshold )
     {
         modeSwitchCount_ = 0;
+
         switch (mode_)
         {
             case MeasurementMode:
-                mode_ = ThresholdMode;
+                mode_ = ShowThresholdMode;
                 display.clearScreen();
                 break;
 
-            case ThresholdMode:
-                mode_ = MeasurementMode;
+            case ShowThresholdMode:
+                if (potValue_ > constants::MaxPotentiometerValue/2)
+                {
+                    mode_ = MeasurementMode;
+                }
+                else
+                {
+                    mode_ = SetThresholdMode;
+                }
+                display.clearScreen();
+                break;
+
+            case SetThresholdMode:
+                
+                saveThresholdToEEPROM();
+                mode_ = ShowThresholdMode;
                 display.clearScreen();
                 break;
 
             default:
+                mode_ = MeasurementMode;
+                display.clearScreen();
                 break;
         }
     }
@@ -166,6 +216,20 @@ void SystemState::updateModeSwitchCount()
     Serial << buttonValue << ", " << modeSwitchCount_ << endl;
 }
 
+
+void SystemState::updateAbsorbThreshUpper()
+{
+    unsigned int absorbThreshInt = map(
+            potValue_, 
+            constants::MinPotentiometerValue,
+            constants::MaxPotentiometerValue,
+            1000*constants::MinAbsorbThresholdUpper,
+            1000*constants::MaxAbsorbThresholdUpper
+            );
+    absorbThreshUpper_ = 0.001*float(absorbThreshInt);
+}
+
+
 void SystemState::setupDioPins()
 {
     // Setup push button pins
@@ -180,6 +244,32 @@ void SystemState::setupDioPins()
     digitalWrite(constants::IndicatorRedLedPin, LOW);
     digitalWrite(constants::IndicatorGreenLedPin, LOW);
 }
+
+
+unsigned int SystemState::getOkSetValue()
+{
+    if (potValue_ > constants::MaxPotentiometerValue/2)
+    {
+        return constants::Ok;
+    }
+    else
+    {
+        return constants::Set;
+    }
+}
+
+
+void SystemState::readThresholdFromEEPROM()
+{
+    EEPROM_readAnything(0,absorbThreshUpper_);
+}
+
+
+void SystemState::saveThresholdToEEPROM()
+{
+    EEPROM_writeAnything(0,absorbThreshUpper_);
+}
+
 
 float getUpdateDt(uint32_t t1, uint32_t t0)  {
     float dt;

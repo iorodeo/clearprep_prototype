@@ -11,7 +11,11 @@
 #include "lowpass_filter.h"
 #include "colorimeter.h"
 
-enum Mode {MeasurementMode=0, ThresholdMode=1}; 
+enum Mode {
+    MeasurementMode=0, 
+    ShowThresholdMode,
+    SetThresholdMode,
+}; 
 
 class SystemState
 {
@@ -21,15 +25,7 @@ class SystemState
 
         SystemState();
         void initialize();
-
         void update();
-        void updateMode();
-        void updateDisplay();
-        void updateMeasurement();
-        void updateModeSwitchCount();
-
-        Mode getMode();
-        void setMode(Mode newMode);
 
     private:
 
@@ -46,8 +42,29 @@ class SystemState
 
         Mode mode_;
         unsigned int modeSwitchCount_;
+        unsigned int potValue_;
 
         void setupDioPins();
+        void updateMode();
+        void updatePotValue();
+        void updateMeasurement();
+        void updateModeSwitchCount();
+        void updateAbsorbThreshUpper();
+
+        void updateLEDDisplay();
+        void updateLCDMeasMode();
+        void updateLCDShowThreshMode();
+        void updateLCDSetThreshMode();
+
+        Mode getMode();
+        void setMode(Mode newMode);
+
+        unsigned int getOkSetValue();
+        
+        void readThresholdFromEEPROM();
+        void saveThresholdToEEPROM();
+
+
 };
 
 #endif // SYSTEM_STATE_HPP

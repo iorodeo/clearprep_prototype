@@ -8,10 +8,6 @@
 #include "constants.h"
 #include "display_handler.h"
 #include "system_state.h"
-//#include "rgb_led.h"
-//#include "color_sensor.h"
-//#include "colorimeter.h"
-//#include "lowpass_filter.h"
 
 SystemState sysState;
 
