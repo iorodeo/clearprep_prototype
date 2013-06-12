@@ -1,15 +1,22 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-19)-testing date = Mon 09 Jan 2012 06:01:04 PM PST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 12 Jun 2013 02:31:58 PM PDT
 
 BeginCmp
-TimeStamp = /4F04AA4F;
+TimeStamp = /51B8E8C5;
 Reference = C1;
-ValeurCmp = CP1;
-IdModule  = SM0805;
+ValeurCmp = C;
+IdModule  = C1;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F04D008;
 Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B8E61C;
+Reference = K2;
 ValeurCmp = CONN_3;
 IdModule  = PIN_ARRAY_3X1;
 EndCmp
@@ -36,24 +43,10 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F04C494;
-Reference = RV1;
-ValeurCmp = POT;
-IdModule  = POT296;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F03B33E;
 Reference = SHIELD1;
 ValeurCmp = ARDUINO_SHIELD;
 IdModule  = ARDUINO_SHIELD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F04A9BA;
-Reference = SW1;
-ValeurCmp = SW_PUSH;
-IdModule  = smt_switch;
 EndCmp
 
 EndListe
