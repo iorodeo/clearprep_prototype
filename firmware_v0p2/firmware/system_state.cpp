@@ -170,26 +170,28 @@ void SystemState::updateMode()
         switch (mode_)
         {
             case MeasurementMode:
-                mode_ = ShowThresholdMode;
+                //mode_ = ShowThresholdMode;
+                mode_ = SetThresholdMode;
                 display.clearScreen();
                 break;
 
-            case ShowThresholdMode:
-                if (potValue_ > constants::MaxPotentiometerValue/2)
-                {
-                    mode_ = MeasurementMode;
-                }
-                else
-                {
-                    mode_ = SetThresholdMode;
-                }
-                display.clearScreen();
-                break;
+            //case ShowThresholdMode:
+            //    if (potValue_ > constants::MaxPotentiometerValue/2)
+            //    {
+            //        mode_ = MeasurementMode;
+            //    }
+            //    else
+            //    {
+            //        mode_ = SetThresholdMode;
+            //    }
+            //    display.clearScreen();
+            //    break;
 
             case SetThresholdMode:
                 
                 saveThresholdToEEPROM();
-                mode_ = ShowThresholdMode;
+                //mode_ = ShowThresholdMode;
+                mode_ = MeasurementMode;
                 display.clearScreen();
                 break;
 

@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Wed 12 Jun 2013 03:20:15 PM PDT
+PCBNEW-BOARD Version 2 date Wed 12 Jun 2013 04:43:24 PM PDT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -9,8 +9,8 @@ LayerCount 2
 EnabledLayers 1FFF8001
 Links 24
 NoConn 0
-Di 55.240767 59.6016 126.365001 118.424
-Ndraw 15
+Di 37.062361 59.6016 126.365001 126.466601
+Ndraw 18
 Ntrack 95
 Nzone 0
 BoardThickness 1.6002
@@ -61,7 +61,7 @@ Pad2MaskClearance 0.254
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 0.150000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory gerber_shield_v1p0/))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 0.150000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_v1p0/))
 $EndSETUP
 
 $EQUIPOT
@@ -748,6 +748,36 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE PIN_ARRAY_3X1
+$COTATION
+Ge 0 24 0
+Va 68.5546
+Te "2.6990 in"
+Po 91.6559 124.841 1.524 2.032 0.3048 -0 1
+Sb 0 57.3786 123.2154 125.9332 123.2154 0.3048
+Sd 0 125.9332 117.9068 125.9332 126.4666 0.3048
+Sg 0 57.3786 117.9068 57.3786 126.4666 0.3048
+S1 0 125.9332 123.2154 124.806696 123.801821 0.3048
+S2 0 125.9332 123.2154 124.806696 122.628979 0.3048
+S3 0 57.3786 123.2154 58.505104 123.801821 0.3048
+S4 0 57.3786 123.2154 58.505104 122.628979 0.3048
+$endCOTATION
+$DRAWSEGMENT
+Po 0 125.9332 112.6998 125.9332 118.1354 0.381
+De 24 0 900 0 0
+$EndDRAWSEGMENT
+$COTATION
+Ge 0 24 0
+Va 53.340024
+Te "2.1000 in"
+Po 42.839047 91.250623 1.524 2.032 0.3048 2700.545674 1
+Sb 0 44.490047 117.919075 44.439247 64.579075 0.3048
+Sd 0 57.3278 64.5668 41.188048 64.582171 0.3048
+Sg 0 57.3786 117.9068 41.238848 117.922171 0.3048
+S1 0 44.439247 64.579075 45.02674 65.70502 0.3048
+S2 0 44.439247 64.579075 43.853899 65.706137 0.3048
+S3 0 44.490047 117.919075 45.075395 116.792013 0.3048
+S4 0 44.490047 117.919075 43.902554 116.79313 0.3048
+$endCOTATION
 $DRAWSEGMENT
 Po 0 123.3678 117.9068 57.3532 117.9068 0.381
 De 28 0 900 0 0

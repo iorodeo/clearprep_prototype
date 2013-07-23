@@ -236,17 +236,6 @@ F 3 "" H 7000 1800 60  0001 C CNN
 	1    7000 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L CP1 C1
-U 1 1 4F04AA4F
-P 7000 1350
-F 0 "C1" H 7050 1450 50  0000 L CNN
-F 1 "CP1" H 7050 1250 50  0000 L CNN
-F 2 "" H 7000 1350 60  0001 C CNN
-F 3 "" H 7000 1350 60  0001 C CNN
-	1    7000 1350
-	1    0    0    -1  
-$EndComp
 Text Label 650  2200 0    60   ~ 0
 VIN
 Text Notes 5650 4950 0    60   ~ 0
@@ -376,4 +365,15 @@ Text Label 9100 2750 0    60   ~ 0
 IGRN
 Text Label 9100 2650 0    60   ~ 0
 IRED
+$Comp
+L C C1
+U 1 1 51B8E8C5
+P 7000 1350
+F 0 "C1" H 7050 1450 50  0000 L CNN
+F 1 "C" H 7050 1250 50  0000 L CNN
+F 2 "" H 7000 1350 60  0000 C CNN
+F 3 "" H 7000 1350 60  0000 C CNN
+	1    7000 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -54,18 +54,32 @@ void DisplayHandler::clearScreen()
 
 void DisplayHandler::updateMeasurementScreen(float value, float threshLower, float threshUpper )
 {
+    char msg[constants::LcdNumCol];
+
+    // Display Threshold
+    // -----------------
     int x = 20;
     int y = 10;
-    char msg[constants::LcdNumCol];
-    int intPart = floor(value);
-    int decPart = int(100*(value - float(intPart)));
+    int intPart = floor(threshUpper);
+    int decPart = int(100*(threshUpper - float(intPart)));
+    snprintf(msg, constants::LcdNumCol, "THRESHOLD:  %d.%02d         ", intPart, decPart);
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
+    // Display Absorbance
+    // ------------------
+    x = 20;
+    y = 22;
+    intPart = floor(value);
+    decPart = int(100*(value - float(intPart)));
     snprintf(msg, constants::LcdNumCol, "ABSORBANCE: %d.%02d          ", intPart, decPart);
     lcd.setPos(x,y);
     lcd.print(msg);
 
+    // Display Pass/Fail
+    // -----------------
     x = 55;
-    y = 35;
-
+    y = 44;
     if (value > threshUpper)
     {
         snprintf(msg, constants::LcdNumCol, "FAIL            ");
@@ -84,7 +98,6 @@ void DisplayHandler::updateMeasurementScreen(float value, float threshLower, flo
         lcd.setPos(x,y);
         lcd.print(msg);
     }
-    
 }
 
 void DisplayHandler::updateShowThresholdScreen(float threshUpper, unsigned int okSetValue)
@@ -116,21 +129,28 @@ void DisplayHandler::updateShowThresholdScreen(float threshUpper, unsigned int o
 void DisplayHandler::updateSetThresholdScreen(float value, float threshUpper)
 {
     char msg[constants::LcdNumCol];
+
     int x = 25;
     int y = 10;
     snprintf(msg, constants::LcdNumCol, "SET THRESHOLD");
     lcd.setPos(x,y);
     lcd.print(msg);
 
+    x = 16;
+    y = 17;
+    snprintf(msg, constants::LcdNumCol, "----------------");
+    lcd.setPos(x,y);
+    lcd.print(msg);
+
     x = 20;
-    y = 30;
+    y = 32;
     int intPart = floor(threshUpper);
     int decPart = int(100*(threshUpper - float(intPart)));
     snprintf(msg, constants::LcdNumCol, "THRESHOLD:  %d.%02d          ", intPart, decPart);
     lcd.setPos(x,y);
     lcd.print(msg);
 
-    y = 40;
+    y = 44;
     intPart = floor(value);
     decPart = int(100*(value - float(intPart)));
     snprintf(msg, constants::LcdNumCol, "ABSORBANCE: %d.%02d          ", intPart, decPart);
