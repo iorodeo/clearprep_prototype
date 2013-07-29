@@ -1,5 +1,6 @@
 #define __STDC_LIMIT_MACROS
 #include <stdint.h>
+#include <math.h>
 #include "system_state.h"
 #include "Streaming.h"
 #include "eeprom_anything.h"
@@ -13,6 +14,8 @@ float getUpdateDt(uint32_t t1, uint32_t t0);
 SystemState::SystemState() 
 { 
     isFirstSample_ = true;
+    absorbThreshUpperChanged_ = false;
+    isAbsorbThreshUpperFirstValue_ = true;
     absorbRaw_ = 0.0;
     absorbFilt_ = 0.0;
     lastUpdateTime_ = 0;
@@ -172,6 +175,7 @@ void SystemState::updateMode()
             case MeasurementMode:
                 //mode_ = ShowThresholdMode;
                 mode_ = SetThresholdMode;
+                delay(constants::ModeChangeDelay);
                 display.clearScreen();
                 break;
 
@@ -184,6 +188,7 @@ void SystemState::updateMode()
             //    {
             //        mode_ = SetThresholdMode;
             //    }
+            //    delay(constants::ModeChangeDelay);
             //    display.clearScreen();
             //    break;
 
@@ -192,6 +197,9 @@ void SystemState::updateMode()
                 saveThresholdToEEPROM();
                 //mode_ = ShowThresholdMode;
                 mode_ = MeasurementMode;
+                isAbsorbThreshUpperFirstValue_ = true;
+                absorbThreshUpperChanged_ = false;
+                delay(constants::ModeChangeDelay);
                 display.clearScreen();
                 break;
 
@@ -221,14 +229,34 @@ void SystemState::updateModeSwitchCount()
 
 void SystemState::updateAbsorbThreshUpper()
 {
-    unsigned int absorbThreshInt = map(
+    static float firstValue = 0.0;
+
+    unsigned int valueInt = map(
             potValue_, 
             constants::MinPotentiometerValue,
             constants::MaxPotentiometerValue,
             1000*constants::MinAbsorbThresholdUpper,
             1000*constants::MaxAbsorbThresholdUpper
             );
-    absorbThreshUpper_ = 0.001*float(absorbThreshInt);
+    float value = 0.001*float(valueInt);
+    if (isAbsorbThreshUpperFirstValue_)
+    {
+        isAbsorbThreshUpperFirstValue_ = false;
+        firstValue = value;
+    }
+
+    if (absorbThreshUpperChanged_ == false)
+    {
+        if (float(fabs(value-firstValue)) > constants::AbsorbThreshMinReqChange)
+        {
+            absorbThreshUpper_ = value;
+            absorbThreshUpperChanged_ = true;
+        }
+    }
+    else
+    {
+        absorbThreshUpper_ = value;
+    }
 }
 
 

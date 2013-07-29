@@ -33,6 +33,8 @@ class SystemState
         LowPassFilter lowPass_;
 
         bool isFirstSample_;
+        bool absorbThreshUpperChanged_;
+        bool isAbsorbThreshUpperFirstValue_;;
         unsigned long lastUpdateTime_;
 
         float absorbRaw_;

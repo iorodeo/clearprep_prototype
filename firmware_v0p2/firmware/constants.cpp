@@ -32,6 +32,7 @@ namespace constants
     const unsigned int MaxPotentiometerValue = 1023; 
     const unsigned int MinBrightnessValue = 0;
     const unsigned int MaxBrightnessValue = 100;
+    const unsigned int ModeChangeDelay = 500;
 
     // Signal processing
     const float LowPassFreqCut = 1.5;
@@ -41,6 +42,9 @@ namespace constants
     const unsigned long GreenLedCalibration = 25000;
     const unsigned long BlueLedCalibration = 25000;
     const unsigned int NumberOfSamples = 2;
+
+    // Set aborbance threshold parameters
+    const float AbsorbThreshMinReqChange = 0.1;
 
     // EEPROM
     const int aborbThreshAddress=0;

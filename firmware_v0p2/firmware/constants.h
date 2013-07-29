@@ -42,8 +42,8 @@ namespace constants
     extern const unsigned int MaxPotentiometerValue; 
     extern const unsigned int MinBrightnessValue;
     extern const unsigned int MaxBrightnessValue;
+    extern const unsigned int ModeChangeDelay;
     
-
     // Signal processing
     extern const float LowPassFreqCut;
     extern const float MinAbsorbThresholdUpper;
@@ -52,6 +52,9 @@ namespace constants
     extern const unsigned long GreenLedCalibration;
     extern const unsigned long BlueLedCalibration;
     extern const unsigned int NumberOfSamples;
+
+    // Set Threshold parameters
+    extern const float AbsorbThreshMinReqChange;
 
 } // namespace constants
 
