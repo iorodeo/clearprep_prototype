@@ -33,9 +33,10 @@ namespace constants
     const unsigned int MinBrightnessValue = 0;
     const unsigned int MaxBrightnessValue = 100;
     const unsigned int ModeChangeDelay = 500;
+    const unsigned int LoopDelayMS = 10;
 
     // Signal processing
-    const float LowPassFreqCut = 1.5;
+    const float LowPassFreqCut = 0.9;
     extern const float MinAbsorbThresholdUpper = 0.206;
     extern const float MaxAbsorbThresholdUpper = 2.5;
     const unsigned long RedLedCalibration = 25000;

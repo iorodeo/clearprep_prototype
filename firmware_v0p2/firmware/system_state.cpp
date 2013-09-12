@@ -77,6 +77,7 @@ void SystemState::update()
     }
     updateLEDDisplay();
     updateMode();
+    delay(constants::LoopDelayMS);
 }
 
 
@@ -91,12 +92,16 @@ void SystemState::updateMeasurement()
         absorbFilt_ = absorbRaw_;
         isFirstSample_= false;
         lastUpdateTime_ = currentTime;
+
+        //Serial << "1: " << absorbRaw_ << ", " << absorbFilt_ << endl;
     }
     else
     {
         float dt = getUpdateDt(currentTime, lastUpdateTime_);
         lastUpdateTime_ = currentTime;
         absorbFilt_ = lowPass_.update(absorbRaw_,dt);
+
+        //Serial << "2: " << absorbRaw_ << ", " << absorbFilt_ << endl;
     }
 }
 
@@ -223,7 +228,7 @@ void SystemState::updateModeSwitchCount()
     {
         modeSwitchCount_ = 0;
     }
-    Serial << buttonValue << ", " << modeSwitchCount_ << endl;
+    //Serial << buttonValue << ", " << modeSwitchCount_ << endl;
 }
 
 

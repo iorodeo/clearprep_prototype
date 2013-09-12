@@ -52,6 +52,7 @@ namespace constants
     extern const unsigned long GreenLedCalibration;
     extern const unsigned long BlueLedCalibration;
     extern const unsigned int NumberOfSamples;
+    extern const unsigned int LoopDelayMS;
 
     // Set Threshold parameters
     extern const float AbsorbThreshMinReqChange;
