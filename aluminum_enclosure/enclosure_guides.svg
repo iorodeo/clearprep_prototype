@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.47 r22583"
-   sodipodi:docname="enclosure.svg">
+   sodipodi:docname="enclosure_guides.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -236,13 +236,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.84111111"
-     inkscape:cx="918.94716"
-     inkscape:cy="437.63215"
+     inkscape:cx="957.74025"
+     inkscape:cy="437.15144"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1005"
+     inkscape:window-width="1680"
+     inkscape:window-height="975"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -255,7 +255,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -265,7 +265,7 @@
      id="layer1"
      transform="translate(-102.04722,50.31988)">
     <g
-       id="g55485">
+       id="g9672">
       <path
          transform="matrix(0.73238406,0,0,0.7709306,99.617469,-89.8343)"
          d="m 156.57365,153.8315 a 10.101525,9.5964489 0 1 1 -20.20305,0 10.101525,9.5964489 0 1 1 20.20305,0 z"
@@ -316,7 +316,7 @@
          id="rect2816"
          style="fill:none;stroke:#000000;stroke-width:2.42959166px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
-         transform="translate(75.444548,-190.54968)"
+         transform="translate(209.44455,-226.54968)"
          id="g34408">
         <g
            id="g34396"
@@ -2389,29 +2389,29 @@
            d="m 565.44522,298.48171 0.64133,-0.12401"
            id="path5211-9" />
       </g>
+      <path
+         id="path38242"
+         d="m 120.28638,7.7992255 636.80359,0"
+         style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path38242-2"
+         d="m 120.28638,248.77954 636.80359,0"
+         style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path38242-3"
+         d="m 120.28638,53.862218 636.80359,0"
+         style="fill:none;stroke:#0012ff;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path38242-3-4"
+         d="m 120.28637,590.85395 636.8036,0"
+         style="fill:none;stroke:#0012ff;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path38242-5"
+         d="m 120.28638,636.91694 636.80359,0"
+         style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 120.28638,7.7992255 636.80359,0"
-       id="path38242" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 120.28638,248.77954 636.80359,0"
-       id="path38242-2" />
-    <path
-       style="fill:none;stroke:#0012ff;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 120.28638,53.862218 636.80359,0"
-       id="path38242-3" />
-    <path
-       style="fill:none;stroke:#0012ff;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 120.28637,590.85395 636.8036,0"
-       id="path38242-3-4" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:1.04525363px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 120.28638,636.91694 636.80359,0"
-       id="path38242-5" />
     <g
-       id="g56119">
+       id="g10391">
       <rect
          ry="0"
          rx="2032.1763"
@@ -2423,7 +2423,7 @@
          style="fill:none;stroke:#000000;stroke-width:1.68787837px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
          id="g50906"
-         transform="translate(1524.0721,224.00645)">
+         transform="translate(1534.0721,202.00645)">
         <rect
            style="fill:none;stroke:#000000;stroke-width:0.71754986px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="rect50366"
