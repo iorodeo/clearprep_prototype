@@ -1,0 +1,16 @@
+all the bitmap utilities require the bmp library available here: http://weknowshit.com/tools/image-manipulation/libdib-0_6_1.zip to build.
+use "gcc bmp2xxx.c -o bmp2xxx -lbmp" to build
+
+
+bmp2bin_sprite takes a 24bbp bitmap and creates a sprite(with width and height bytes) the data is output to stdout.
+
+I usually use it like this: "bmp2bin_sprite name_of_bitmap.bmp > name_of_sprite.bin"
+
+this creates a .bin file that I can send over a terminal program to the LCD. 
+
+bmp2header_sprite creates a C header file which can be included in source code to hard code a sprite.
+
+bmp2header_font takes a bitmap font (with the characters in order left to right see 10x16_font.bmp for an example) and creates a font header.
+note that the file only reads color 0 as set pixels, this allows other colors to be used as drawing aids(10x16_font.bmp has alternating grey rectangles to mark character boundaries)
+
+

@@ -1,0 +1,1 @@
+sudo avrdude -p m168 -P usb -c avrispmkII -Uflash:w:main.hex -B 1.0
