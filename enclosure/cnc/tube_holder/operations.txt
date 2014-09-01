@@ -1,0 +1,6 @@
+
+Machining operations.
+
+1. Drill 4-40 through holes, files: drill_thru_4-40.py, drill_thru_4-40.ngc
+2. Fix parts using 4-40 through holes
+3. Mill holes and boundary, files: mill.py, mill.ngc

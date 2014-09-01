@@ -19,8 +19,392 @@ F 120.0
 ; startDwell: 2.0
 ; safeZ: 0.5
 ; maxCutDepth: 0.1
-; fileName: tube_holder_low.dxf
-; depth: 0.15
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 0.769671075437
+; centerY: 4.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X0.99554408 Y4.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X0.99554408 Y4.18110690 Z0.00000000
+G3 X0.99554408 Y4.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X0.99554408 Y4.18110690 Z-0.10000000
+G3 X0.99554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X0.99554408 Y4.18110690 Z-0.16000000
+G3 X0.99554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 0.769671075437
+; centerY: 7.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X0.99554408 Y7.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X0.99554408 Y7.18110690 Z0.00000000
+G3 X0.99554408 Y7.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X0.99554408 Y7.18110690 Z-0.10000000
+G3 X0.99554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X0.99554408 Y7.18110690 Z-0.16000000
+G3 X0.99554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 2.56967107544
+; centerY: 1.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X2.79554408 Y1.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X2.79554408 Y1.18110690 Z0.00000000
+G3 X2.79554408 Y1.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X2.79554408 Y1.18110690 Z-0.10000000
+G3 X2.79554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X2.79554408 Y1.18110690 Z-0.16000000
+G3 X2.79554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 2.56967107544
+; centerY: 4.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X2.79554408 Y4.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X2.79554408 Y4.18110690 Z0.00000000
+G3 X2.79554408 Y4.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X2.79554408 Y4.18110690 Z-0.10000000
+G3 X2.79554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X2.79554408 Y4.18110690 Z-0.16000000
+G3 X2.79554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 2.56967107544
+; centerY: 7.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X2.79554408 Y7.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X2.79554408 Y7.18110690 Z0.00000000
+G3 X2.79554408 Y7.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X2.79554408 Y7.18110690 Z-0.10000000
+G3 X2.79554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X2.79554408 Y7.18110690 Z-0.16000000
+G3 X2.79554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 4.46967107544
+; centerY: 1.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X4.69554408 Y1.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X4.69554408 Y1.18110690 Z0.00000000
+G3 X4.69554408 Y1.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X4.69554408 Y1.18110690 Z-0.10000000
+G3 X4.69554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X4.69554408 Y1.18110690 Z-0.16000000
+G3 X4.69554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 4.46967107544
+; centerY: 4.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X4.69554408 Y4.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X4.69554408 Y4.18110690 Z0.00000000
+G3 X4.69554408 Y4.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X4.69554408 Y4.18110690 Z-0.10000000
+G3 X4.69554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X4.69554408 Y4.18110690 Z-0.16000000
+G3 X4.69554408 Y4.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
+; radius: 0.288373000008
+; dxfTypes: ['CIRCLE']
+; centerX: 4.46967107544
+; centerY: 7.18110690058
+; toolDiam: 0.125
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; CircBoundaryXY: rapid move to start x,y
+G0 X4.69554408 Y7.18110690
+
+; CircBoundaryXY: dwell
+G4 P2.0
+
+; CircBoundaryXY: move to start z
+G1 Z0.00000000
+
+; CircBoundaryXY: CircPath 0
+G1 X4.69554408 Y7.18110690 Z0.00000000
+G3 X4.69554408 Y7.18110690 Z-0.10000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 1
+G1 X4.69554408 Y7.18110690 Z-0.10000000
+G3 X4.69554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: CircPath 2
+G1 X4.69554408 Y7.18110690 Z-0.16000000
+G3 X4.69554408 Y7.18110690 Z-0.16000000 I-0.22587300 J0.00000000
+
+; CircBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; End CircBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin CircBoundaryXY
+; ------------------------------------------------------------
+; layers: ['tube_circle']
+; startZ: 0.0
+; direction: ccw
+; toolOffset: inside
+; startDwell: 2.0
+; safeZ: 0.5
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; depth: 0.16
 ; radius: 0.288373000008
 ; dxfTypes: ['CIRCLE']
 ; centerX: 0.769671075437
@@ -45,11 +429,11 @@ G3 X0.99554408 Y1.18110690 Z-0.10000000 I-0.22587300 J0.00000000
 
 ; CircBoundaryXY: CircPath 1
 G1 X0.99554408 Y1.18110690 Z-0.10000000
-G3 X0.99554408 Y1.18110690 Z-0.15000000 I-0.22587300 J0.00000000
+G3 X0.99554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
 
 ; CircBoundaryXY: CircPath 2
-G1 X0.99554408 Y1.18110690 Z-0.15000000
-G3 X0.99554408 Y1.18110690 Z-0.15000000 I-0.22587300 J0.00000000
+G1 X0.99554408 Y1.18110690 Z-0.16000000
+G3 X0.99554408 Y1.18110690 Z-0.16000000 I-0.22587300 J0.00000000
 
 ; CircBoundaryXY: rapid move to safe z
 G0 Z0.50000000
@@ -67,11 +451,611 @@ G0 Z0.50000000
 ; startDwell: 2.0
 ; direction: ccw
 ; maxCutDepth: 0.1
-; fileName: tube_holder_low.dxf
+; fileName: tube_holder_low_array.dxf
 ; convertArcs: True
 ; ptEquivTol: 1e-05
 ; layers: ['tube_cutout']
-; depth: 0.15
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X0.90551181 Y4.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X0.90551181 Y4.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X0.90551181 Y4.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X0.90551181 Y4.35413386 Z0.00000000
+G1 X0.90551181 Y4.00807087 Z-0.02617630
+G1 X1.22047244 Y4.00807087 Z-0.05000000
+G1 X1.22047244 Y4.35413386 Z-0.07617630
+G1 X0.90551181 Y4.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X0.90551181 Y4.35413386 Z-0.10000000
+G1 X0.90551181 Y4.00807087 Z-0.11570578
+G1 X1.22047244 Y4.00807087 Z-0.13000000
+G1 X1.22047244 Y4.35413386 Z-0.14570578
+G1 X0.90551181 Y4.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X0.90551181 Y4.35413386 Z-0.16000000
+G1 X0.90551181 Y4.00807087 Z-0.16000000
+G1 X1.22047244 Y4.00807087 Z-0.16000000
+G1 X1.22047244 Y4.35413386 Z-0.16000000
+G1 X0.90551181 Y4.35413386 Z-0.16000000
+G1 X0.90551181 Y4.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.90551181 Y4.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.90551181 Y4.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X0.90551181 Y7.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X0.90551181 Y7.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X0.90551181 Y7.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X0.90551181 Y7.35413386 Z0.00000000
+G1 X0.90551181 Y7.00807087 Z-0.02617630
+G1 X1.22047244 Y7.00807087 Z-0.05000000
+G1 X1.22047244 Y7.35413386 Z-0.07617630
+G1 X0.90551181 Y7.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X0.90551181 Y7.35413386 Z-0.10000000
+G1 X0.90551181 Y7.00807087 Z-0.11570578
+G1 X1.22047244 Y7.00807087 Z-0.13000000
+G1 X1.22047244 Y7.35413386 Z-0.14570578
+G1 X0.90551181 Y7.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X0.90551181 Y7.35413386 Z-0.16000000
+G1 X0.90551181 Y7.00807087 Z-0.16000000
+G1 X1.22047244 Y7.00807087 Z-0.16000000
+G1 X1.22047244 Y7.35413386 Z-0.16000000
+G1 X0.90551181 Y7.35413386 Z-0.16000000
+G1 X0.90551181 Y7.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.90551181 Y7.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.90551181 Y7.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X2.70551181 Y1.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y1.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y1.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X2.70551181 Y1.35413386 Z0.00000000
+G1 X2.70551181 Y1.00807087 Z-0.02617630
+G1 X3.02047244 Y1.00807087 Z-0.05000000
+G1 X3.02047244 Y1.35413386 Z-0.07617630
+G1 X2.70551181 Y1.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X2.70551181 Y1.35413386 Z-0.10000000
+G1 X2.70551181 Y1.00807087 Z-0.11570578
+G1 X3.02047244 Y1.00807087 Z-0.13000000
+G1 X3.02047244 Y1.35413386 Z-0.14570578
+G1 X2.70551181 Y1.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X2.70551181 Y1.35413386 Z-0.16000000
+G1 X2.70551181 Y1.00807087 Z-0.16000000
+G1 X3.02047244 Y1.00807087 Z-0.16000000
+G1 X3.02047244 Y1.35413386 Z-0.16000000
+G1 X2.70551181 Y1.35413386 Z-0.16000000
+G1 X2.70551181 Y1.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y1.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y1.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X2.70551181 Y4.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y4.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y4.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X2.70551181 Y4.35413386 Z0.00000000
+G1 X2.70551181 Y4.00807087 Z-0.02617630
+G1 X3.02047244 Y4.00807087 Z-0.05000000
+G1 X3.02047244 Y4.35413386 Z-0.07617630
+G1 X2.70551181 Y4.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X2.70551181 Y4.35413386 Z-0.10000000
+G1 X2.70551181 Y4.00807087 Z-0.11570578
+G1 X3.02047244 Y4.00807087 Z-0.13000000
+G1 X3.02047244 Y4.35413386 Z-0.14570578
+G1 X2.70551181 Y4.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X2.70551181 Y4.35413386 Z-0.16000000
+G1 X2.70551181 Y4.00807087 Z-0.16000000
+G1 X3.02047244 Y4.00807087 Z-0.16000000
+G1 X3.02047244 Y4.35413386 Z-0.16000000
+G1 X2.70551181 Y4.35413386 Z-0.16000000
+G1 X2.70551181 Y4.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y4.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y4.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X2.70551181 Y7.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y7.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X2.70551181 Y7.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X2.70551181 Y7.35413386 Z0.00000000
+G1 X2.70551181 Y7.00807087 Z-0.02617630
+G1 X3.02047244 Y7.00807087 Z-0.05000000
+G1 X3.02047244 Y7.35413386 Z-0.07617630
+G1 X2.70551181 Y7.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X2.70551181 Y7.35413386 Z-0.10000000
+G1 X2.70551181 Y7.00807087 Z-0.11570578
+G1 X3.02047244 Y7.00807087 Z-0.13000000
+G1 X3.02047244 Y7.35413386 Z-0.14570578
+G1 X2.70551181 Y7.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X2.70551181 Y7.35413386 Z-0.16000000
+G1 X2.70551181 Y7.00807087 Z-0.16000000
+G1 X3.02047244 Y7.00807087 Z-0.16000000
+G1 X3.02047244 Y7.35413386 Z-0.16000000
+G1 X2.70551181 Y7.35413386 Z-0.16000000
+G1 X2.70551181 Y7.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y7.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X2.70551181 Y7.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.60551181 Y1.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y1.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y1.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.60551181 Y1.35413386 Z0.00000000
+G1 X4.60551181 Y1.00807087 Z-0.02617630
+G1 X4.92047244 Y1.00807087 Z-0.05000000
+G1 X4.92047244 Y1.35413386 Z-0.07617630
+G1 X4.60551181 Y1.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.60551181 Y1.35413386 Z-0.10000000
+G1 X4.60551181 Y1.00807087 Z-0.11570578
+G1 X4.92047244 Y1.00807087 Z-0.13000000
+G1 X4.92047244 Y1.35413386 Z-0.14570578
+G1 X4.60551181 Y1.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X4.60551181 Y1.35413386 Z-0.16000000
+G1 X4.60551181 Y1.00807087 Z-0.16000000
+G1 X4.92047244 Y1.00807087 Z-0.16000000
+G1 X4.92047244 Y1.35413386 Z-0.16000000
+G1 X4.60551181 Y1.35413386 Z-0.16000000
+G1 X4.60551181 Y1.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y1.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y1.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.60551181 Y4.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y4.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y4.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.60551181 Y4.35413386 Z0.00000000
+G1 X4.60551181 Y4.00807087 Z-0.02617630
+G1 X4.92047244 Y4.00807087 Z-0.05000000
+G1 X4.92047244 Y4.35413386 Z-0.07617630
+G1 X4.60551181 Y4.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.60551181 Y4.35413386 Z-0.10000000
+G1 X4.60551181 Y4.00807087 Z-0.11570578
+G1 X4.92047244 Y4.00807087 Z-0.13000000
+G1 X4.92047244 Y4.35413386 Z-0.14570578
+G1 X4.60551181 Y4.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X4.60551181 Y4.35413386 Z-0.16000000
+G1 X4.60551181 Y4.00807087 Z-0.16000000
+G1 X4.92047244 Y4.00807087 Z-0.16000000
+G1 X4.92047244 Y4.35413386 Z-0.16000000
+G1 X4.60551181 Y4.35413386 Z-0.16000000
+G1 X4.60551181 Y4.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y4.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y4.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X4.60551181 Y7.35413386
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y7.47913386
+G41.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X4.60551181 Y7.35413386
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X4.60551181 Y7.35413386 Z0.00000000
+G1 X4.60551181 Y7.00807087 Z-0.02617630
+G1 X4.92047244 Y7.00807087 Z-0.05000000
+G1 X4.92047244 Y7.35413386 Z-0.07617630
+G1 X4.60551181 Y7.35413386 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X4.60551181 Y7.35413386 Z-0.10000000
+G1 X4.60551181 Y7.00807087 Z-0.11570578
+G1 X4.92047244 Y7.00807087 Z-0.13000000
+G1 X4.92047244 Y7.35413386 Z-0.14570578
+G1 X4.60551181 Y7.35413386 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X4.60551181 Y7.35413386 Z-0.16000000
+G1 X4.60551181 Y7.00807087 Z-0.16000000
+G1 X4.92047244 Y7.00807087 Z-0.16000000
+G1 X4.92047244 Y7.35413386 Z-0.16000000
+G1 X4.60551181 Y7.35413386 Z-0.16000000
+G1 X4.60551181 Y7.29163386 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y7.16663386
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X4.60551181 Y7.29163386
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: left
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['tube_cutout']
+; depth: 0.16
 ; safeZ: 0.5
 ; dxfTypes: ['LINE', 'ARC']
 ; closed: True
@@ -106,18 +1090,18 @@ G1 X0.90551181 Y1.35413386 Z-0.10000000
 
 ; LineSegBoundaryXY: LineSegPath 1
 G1 X0.90551181 Y1.35413386 Z-0.10000000
-G1 X0.90551181 Y1.00807087 Z-0.11308815
-G1 X1.22047244 Y1.00807087 Z-0.12500000
-G1 X1.22047244 Y1.35413386 Z-0.13808815
-G1 X0.90551181 Y1.35413386 Z-0.15000000
+G1 X0.90551181 Y1.00807087 Z-0.11570578
+G1 X1.22047244 Y1.00807087 Z-0.13000000
+G1 X1.22047244 Y1.35413386 Z-0.14570578
+G1 X0.90551181 Y1.35413386 Z-0.16000000
 
 ; LineSegBoundaryXY: LineSegPath 2
-G1 X0.90551181 Y1.35413386 Z-0.15000000
-G1 X0.90551181 Y1.00807087 Z-0.15000000
-G1 X1.22047244 Y1.00807087 Z-0.15000000
-G1 X1.22047244 Y1.35413386 Z-0.15000000
-G1 X0.90551181 Y1.35413386 Z-0.15000000
-G1 X0.90551181 Y1.29163386 Z-0.15000000
+G1 X0.90551181 Y1.35413386 Z-0.16000000
+G1 X0.90551181 Y1.00807087 Z-0.16000000
+G1 X1.22047244 Y1.00807087 Z-0.16000000
+G1 X1.22047244 Y1.35413386 Z-0.16000000
+G1 X0.90551181 Y1.35413386 Z-0.16000000
+G1 X0.90551181 Y1.29163386 Z-0.16000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.50000000
@@ -142,11 +1126,611 @@ G0 X0.90551181 Y1.29163386
 ; startDwell: 2.0
 ; direction: ccw
 ; maxCutDepth: 0.1
-; fileName: tube_holder_low.dxf
+; fileName: tube_holder_low_array.dxf
 ; convertArcs: True
 ; ptEquivTol: 1e-05
 ; layers: ['boundary']
-; depth: 0.15
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X-0.00000000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X-0.12500000 Y3.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X-0.00000000 Y3.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X-0.00000000 Y3.00000000 Z0.00000000
+G1 X1.10236220 Y3.00000000 Z-0.01590909
+G1 X1.10236220 Y5.36220472 Z-0.05000000
+G1 X-0.00000000 Y5.36220472 Z-0.06590909
+G1 X-0.00000000 Y3.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X-0.00000000 Y3.00000000 Z-0.10000000
+G1 X1.10236220 Y3.00000000 Z-0.10954545
+G1 X1.10236220 Y5.36220472 Z-0.13000000
+G1 X-0.00000000 Y5.36220472 Z-0.13954545
+G1 X-0.00000000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X-0.00000000 Y3.00000000 Z-0.16000000
+G1 X1.10236220 Y3.00000000 Z-0.16000000
+G1 X1.10236220 Y5.36220472 Z-0.16000000
+G1 X-0.00000000 Y5.36220472 Z-0.16000000
+G1 X-0.00000000 Y3.00000000 Z-0.16000000
+G1 X0.06250000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.18750000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.06250000 Y3.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X-0.00000000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X-0.12500000 Y6.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X-0.00000000 Y6.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X-0.00000000 Y6.00000000 Z0.00000000
+G1 X1.10236220 Y6.00000000 Z-0.01590909
+G1 X1.10236220 Y8.36220472 Z-0.05000000
+G1 X-0.00000000 Y8.36220472 Z-0.06590909
+G1 X-0.00000000 Y6.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X-0.00000000 Y6.00000000 Z-0.10000000
+G1 X1.10236220 Y6.00000000 Z-0.10954545
+G1 X1.10236220 Y8.36220472 Z-0.13000000
+G1 X-0.00000000 Y8.36220472 Z-0.13954545
+G1 X-0.00000000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X-0.00000000 Y6.00000000 Z-0.16000000
+G1 X1.10236220 Y6.00000000 Z-0.16000000
+G1 X1.10236220 Y8.36220472 Z-0.16000000
+G1 X-0.00000000 Y8.36220472 Z-0.16000000
+G1 X-0.00000000 Y6.00000000 Z-0.16000000
+G1 X0.06250000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.18750000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X0.06250000 Y6.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X1.80000000 Y-0.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.67500000 Y-0.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.80000000 Y-0.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X1.80000000 Y-0.00000000 Z0.00000000
+G1 X2.90236220 Y-0.00000000 Z-0.01590909
+G1 X2.90236220 Y2.36220472 Z-0.05000000
+G1 X1.80000000 Y2.36220472 Z-0.06590909
+G1 X1.80000000 Y-0.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X1.80000000 Y-0.00000000 Z-0.10000000
+G1 X2.90236220 Y-0.00000000 Z-0.10954545
+G1 X2.90236220 Y2.36220472 Z-0.13000000
+G1 X1.80000000 Y2.36220472 Z-0.13954545
+G1 X1.80000000 Y-0.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X1.80000000 Y-0.00000000 Z-0.16000000
+G1 X2.90236220 Y-0.00000000 Z-0.16000000
+G1 X2.90236220 Y2.36220472 Z-0.16000000
+G1 X1.80000000 Y2.36220472 Z-0.16000000
+G1 X1.80000000 Y-0.00000000 Z-0.16000000
+G1 X1.86250000 Y0.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.98750000 Y0.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.86250000 Y0.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X1.80000000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.67500000 Y3.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.80000000 Y3.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X1.80000000 Y3.00000000 Z0.00000000
+G1 X2.90236220 Y3.00000000 Z-0.01590909
+G1 X2.90236220 Y5.36220472 Z-0.05000000
+G1 X1.80000000 Y5.36220472 Z-0.06590909
+G1 X1.80000000 Y3.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X1.80000000 Y3.00000000 Z-0.10000000
+G1 X2.90236220 Y3.00000000 Z-0.10954545
+G1 X2.90236220 Y5.36220472 Z-0.13000000
+G1 X1.80000000 Y5.36220472 Z-0.13954545
+G1 X1.80000000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X1.80000000 Y3.00000000 Z-0.16000000
+G1 X2.90236220 Y3.00000000 Z-0.16000000
+G1 X2.90236220 Y5.36220472 Z-0.16000000
+G1 X1.80000000 Y5.36220472 Z-0.16000000
+G1 X1.80000000 Y3.00000000 Z-0.16000000
+G1 X1.86250000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.98750000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.86250000 Y3.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X1.80000000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.67500000 Y6.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X1.80000000 Y6.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X1.80000000 Y6.00000000 Z0.00000000
+G1 X2.90236220 Y6.00000000 Z-0.01590909
+G1 X2.90236220 Y8.36220472 Z-0.05000000
+G1 X1.80000000 Y8.36220472 Z-0.06590909
+G1 X1.80000000 Y6.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X1.80000000 Y6.00000000 Z-0.10000000
+G1 X2.90236220 Y6.00000000 Z-0.10954545
+G1 X2.90236220 Y8.36220472 Z-0.13000000
+G1 X1.80000000 Y8.36220472 Z-0.13954545
+G1 X1.80000000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X1.80000000 Y6.00000000 Z-0.16000000
+G1 X2.90236220 Y6.00000000 Z-0.16000000
+G1 X2.90236220 Y8.36220472 Z-0.16000000
+G1 X1.80000000 Y8.36220472 Z-0.16000000
+G1 X1.80000000 Y6.00000000 Z-0.16000000
+G1 X1.86250000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.98750000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X1.86250000 Y6.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X3.70000000 Y0.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.57500000 Y0.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.70000000 Y0.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X3.70000000 Y0.00000000 Z0.00000000
+G1 X4.80236220 Y0.00000000 Z-0.01590909
+G1 X4.80236220 Y2.36220472 Z-0.05000000
+G1 X3.70000000 Y2.36220472 Z-0.06590909
+G1 X3.70000000 Y0.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X3.70000000 Y0.00000000 Z-0.10000000
+G1 X4.80236220 Y0.00000000 Z-0.10954545
+G1 X4.80236220 Y2.36220472 Z-0.13000000
+G1 X3.70000000 Y2.36220472 Z-0.13954545
+G1 X3.70000000 Y0.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X3.70000000 Y0.00000000 Z-0.16000000
+G1 X4.80236220 Y0.00000000 Z-0.16000000
+G1 X4.80236220 Y2.36220472 Z-0.16000000
+G1 X3.70000000 Y2.36220472 Z-0.16000000
+G1 X3.70000000 Y0.00000000 Z-0.16000000
+G1 X3.76250000 Y0.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.88750000 Y0.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.76250000 Y0.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X3.70000000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.57500000 Y3.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.70000000 Y3.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X3.70000000 Y3.00000000 Z0.00000000
+G1 X4.80236220 Y3.00000000 Z-0.01590909
+G1 X4.80236220 Y5.36220472 Z-0.05000000
+G1 X3.70000000 Y5.36220472 Z-0.06590909
+G1 X3.70000000 Y3.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X3.70000000 Y3.00000000 Z-0.10000000
+G1 X4.80236220 Y3.00000000 Z-0.10954545
+G1 X4.80236220 Y5.36220472 Z-0.13000000
+G1 X3.70000000 Y5.36220472 Z-0.13954545
+G1 X3.70000000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X3.70000000 Y3.00000000 Z-0.16000000
+G1 X4.80236220 Y3.00000000 Z-0.16000000
+G1 X4.80236220 Y5.36220472 Z-0.16000000
+G1 X3.70000000 Y5.36220472 Z-0.16000000
+G1 X3.70000000 Y3.00000000 Z-0.16000000
+G1 X3.76250000 Y3.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.88750000 Y3.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.76250000 Y3.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
+; safeZ: 0.5
+; dxfTypes: ['LINE', 'ARC']
+; closed: True
+; toolDiam: 0.125
+; pointList: too big
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+
+; LineSegBoundaryXY: rapid move to start x,y
+G0 X3.70000000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.57500000 Y6.00000000
+G42.1 D0.125
+
+; LineSegBoundaryXY: rapid move to cutterComp start move
+G0 X3.70000000 Y6.00000000
+
+; LineSegBoundaryXY: dwell
+G4 P2.0
+
+; LineSegBoundaryXY: move to start z
+G1 Z0.00000000
+
+; LineSegBoundaryXY: LineSegPath 0
+G1 X3.70000000 Y6.00000000 Z0.00000000
+G1 X4.80236220 Y6.00000000 Z-0.01590909
+G1 X4.80236220 Y8.36220472 Z-0.05000000
+G1 X3.70000000 Y8.36220472 Z-0.06590909
+G1 X3.70000000 Y6.00000000 Z-0.10000000
+
+; LineSegBoundaryXY: LineSegPath 1
+G1 X3.70000000 Y6.00000000 Z-0.10000000
+G1 X4.80236220 Y6.00000000 Z-0.10954545
+G1 X4.80236220 Y8.36220472 Z-0.13000000
+G1 X3.70000000 Y8.36220472 Z-0.13954545
+G1 X3.70000000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: LineSegPath 2
+G1 X3.70000000 Y6.00000000 Z-0.16000000
+G1 X4.80236220 Y6.00000000 Z-0.16000000
+G1 X4.80236220 Y8.36220472 Z-0.16000000
+G1 X3.70000000 Y8.36220472 Z-0.16000000
+G1 X3.70000000 Y6.00000000 Z-0.16000000
+G1 X3.76250000 Y6.00000000 Z-0.16000000
+
+; LineSegBoundaryXY: rapid move to safe z
+G0 Z0.50000000
+G40
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.88750000 Y6.00000000
+
+; LineSegBoundaryXY: rapid move to cancel cutter comp move
+G0 X3.76250000 Y6.00000000
+
+; End LineSegBoundaryXY
+; ------------------------------------------------------------
+
+
+; Begin LineSegBoundaryXY
+; ------------------------------------------------------------
+; startZ: 0.0
+; maxArcLen: 0.01
+; startCond: minX
+; cutterComp: right
+; startDwell: 2.0
+; direction: ccw
+; maxCutDepth: 0.1
+; fileName: tube_holder_low_array.dxf
+; convertArcs: True
+; ptEquivTol: 1e-05
+; layers: ['boundary']
+; depth: 0.16
 ; safeZ: 0.5
 ; dxfTypes: ['LINE', 'ARC']
 ; closed: True
@@ -181,18 +1765,18 @@ G1 X0.00000000 Y0.00000000 Z-0.10000000
 
 ; LineSegBoundaryXY: LineSegPath 1
 G1 X0.00000000 Y0.00000000 Z-0.10000000
-G1 X1.10236220 Y0.00000000 Z-0.10795455
-G1 X1.10236220 Y2.36220472 Z-0.12500000
-G1 X0.00000000 Y2.36220472 Z-0.13295455
-G1 X0.00000000 Y0.00000000 Z-0.15000000
+G1 X1.10236220 Y0.00000000 Z-0.10954545
+G1 X1.10236220 Y2.36220472 Z-0.13000000
+G1 X0.00000000 Y2.36220472 Z-0.13954545
+G1 X0.00000000 Y0.00000000 Z-0.16000000
 
 ; LineSegBoundaryXY: LineSegPath 2
-G1 X0.00000000 Y0.00000000 Z-0.15000000
-G1 X1.10236220 Y0.00000000 Z-0.15000000
-G1 X1.10236220 Y2.36220472 Z-0.15000000
-G1 X0.00000000 Y2.36220472 Z-0.15000000
-G1 X0.00000000 Y0.00000000 Z-0.15000000
-G1 X0.06250000 Y0.00000000 Z-0.15000000
+G1 X0.00000000 Y0.00000000 Z-0.16000000
+G1 X1.10236220 Y0.00000000 Z-0.16000000
+G1 X1.10236220 Y2.36220472 Z-0.16000000
+G1 X0.00000000 Y2.36220472 Z-0.16000000
+G1 X0.00000000 Y0.00000000 Z-0.16000000
+G1 X0.06250000 Y0.00000000 Z-0.16000000
 
 ; LineSegBoundaryXY: rapid move to safe z
 G0 Z0.50000000

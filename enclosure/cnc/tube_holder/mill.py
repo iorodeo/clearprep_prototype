@@ -7,7 +7,7 @@ from py2gcode import cnc_dxf
 fileName = sys.argv[1] 
 
 feedrate = 120.0
-depth = 0.15
+depth = 0.16
 startZ = 0.0
 safeZ = 0.5
 toolDiam = 0.125 
