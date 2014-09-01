@@ -7,6 +7,14 @@ syntax: glob
 *.scad
 *.stl
 *.pkl
+*.eep
+*.hex
+*.o.d
+*.elf
+*.lss
+*.lst
+*.map
+*.sym
 *.komodo*
 *.egg-info
 .DS_Store
